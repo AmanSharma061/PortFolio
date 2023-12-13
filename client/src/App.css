@@ -1,0 +1,189 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+@media (max-width:870px) {
+
+    nav {
+        flex-direction: column;
+    }
+
+    ul {
+        flex-direction: column;
+    }
+
+    .xx {
+        margin-top: 5vh;
+        margin-bottom: 2vh;
+
+        display: none;
+    }
+
+    #btn {
+
+        margin-right: auto;
+
+
+    }
+
+    .yy {
+        position: relative;
+        left: -50%;
+    }
+
+    #rimg {
+        display: none;
+    }
+
+    #fm input {
+        outline: none;
+        padding-left: 10px;
+    }
+
+    #typing {
+        font-size: 18px;
+        margin-left: 10%;
+        margin-right: 0%;
+    }
+
+    #resume {
+        margin-left: -10%;
+        margin-right: 0%;
+    }
+
+
+
+}
+
+@media((min-width:700px) and (max-width:870px)) {
+
+
+    #btn {
+        display: none;
+
+
+    }
+
+    #h {
+        display: flex;
+    }
+
+
+}
+
+@media(max-width:850px) {
+
+    #resume {
+        margin-left: -10%;
+        margin-right: 0%;
+    }
+
+}
+
+@media((min-width:300px) and (max-width:600px)) {
+
+    #resume {
+        margin-left: -40%
+    }
+
+}
+
+
+ul li:hover {
+    color: #df2a61;
+}
+
+ul li {
+    color: #24527a;
+}
+
+img {
+    filter: invert(10%);
+    /* border: 0.1px solid rgba(0, 0, 0, 0.823); */
+    border-radius: 10px;
+}
+
+.yy h2 {
+    color: #551A8B;
+}
+
+/* Re{
+    gister Styling */
+
+.ss {
+    position: relative;
+    width: 60vw;
+    height: 70vh;
+    margin: 5vh auto;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+
+
+@media(max-width:600px) {
+
+
+    .ss {
+        width: 90%;
+        height: 75vh;
+        margin-top: 0;
+
+    }
+}
+
+@media ((min-width:860px) and (max-width:1500px)) {
+    #rimg {
+        width: 50%;
+    }
+
+    .ss {
+        width: 80%;
+    }
+}
+
+input {
+    border-bottom: #d4c4c9c2 1px solid;
+}
+
+
+
+/* Contact Styling */
+
+@media (max-width:850px) {
+
+
+
+    #contact {
+        display: none;
+    }
+}
+
+
+#notFound {
+    background-image: url(./404.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    filter: blur(2px)
+
+}
+
+
+@media (max-width:800px) {
+    #notFound {
+        background-size: contain;
+        top: -10%;
+        position: fixed;
+
+    }
+}
