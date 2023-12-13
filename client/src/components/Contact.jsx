@@ -69,7 +69,7 @@ function Contact () {
       <div className=' sm:w-[65%] mx-auto flex  items-center text-center sm:mt-[2%] '>
         <div className=' w-[100%] mt-[5vh]  flex justify-center shadow-xl cc'>
           <img
-            src='./public/contact.png'
+            src='/contact.png'
             alt=''
             className='w-[50%] h-[60vh] my-auto '
             id='contact'

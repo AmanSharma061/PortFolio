@@ -70,7 +70,7 @@ export default function Navbar () {
         </div>
 
         <img
-          src='./public/menu.png'
+          src='/menu.png'
           alt='scscsc'
           className='w-12 h-auto   absolute  right-8 top-3.5   md:hidden py-1 px-1  box-border'
           onClick={hamburger}

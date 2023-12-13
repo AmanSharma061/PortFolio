@@ -106,7 +106,7 @@ function Projects () {
                   <div className='mx-auto max-w-xs px-4'>
                     <p className='-mt-10 -mb-20 flex items-baseline justify-center gap-x-2'>
                       {/* Video */}
-                      <img src='./public/Logo.png' alt='' className=' z-auto' />
+                      <img src='/Logo.png' alt='' className=' z-auto' />
                     </p>
                     <p className='mt-6 text-xs leading-5 text-gray-600'>
                       All the code is in the Github Repository and the link is
@@ -166,7 +166,7 @@ function Projects () {
                     <p className='-mt-10 -mb-20 flex items-baseline justify-center gap-x-2'>
                       {/* Video */}
                       <img
-                        src='./public/Logo.png'
+                        src='/Logo.png'
                         alt=''
                         className='   text-white'
                       />
