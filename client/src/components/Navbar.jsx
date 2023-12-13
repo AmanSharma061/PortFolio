@@ -1,7 +1,7 @@
 import React, { useContext, useEffect, useState } from 'react'
 import { Link, NavLink } from 'react-router-dom'
 import userContext from '../context/userContext'
-
+import { FaAlignRight } from "react-icons/fa6";
 export default function Navbar () {
   const { log, setLog } = useContext(userContext)
   useEffect(() => {}, [])
@@ -70,12 +70,13 @@ export default function Navbar () {
         </div>
 
         <img
-          src='/src/menu.png'
+          src='./public/menu.png'
           alt='scscsc'
           className='w-12 h-auto   absolute  right-8 top-3.5   md:hidden py-1 px-1  box-border'
           onClick={hamburger}
           id='h'
         />
+     
       </nav>
     </>
   )
