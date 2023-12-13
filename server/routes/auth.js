@@ -6,7 +6,7 @@ import User from '../db/userSchema.js';
 import bcrypt from 'bcryptjs';
 
 // USER REGISTRATION ROUTE
-router.post ('/api/register', async (req, res) => {
+router.post ('https://portfolio-mjax.onrender.com/register', async (req, res) => {
   const {name, email, password, cpassword, phone, profession} = req.body;
   try {
     const EmailExist = await User.findOne ({email: email});
@@ -42,7 +42,7 @@ router.post ('/api/register', async (req, res) => {
 });
 
 // /USER LOGIN ROUTE
-router.post ('/api/login', async (req, res) => {
+router.post ('https://portfolio-mjax.onrender.com/login', async (req, res) => {
   try {
     const {email, password} = req.body;
 
@@ -73,7 +73,7 @@ router.post ('/api/login', async (req, res) => {
   }
 });
 
-router.post ('/api/contact', async (req, res) => {
+router.post ('https://portfolio-mjax.onrender.com/contact', async (req, res) => {
   try {
     const {name, email, phone, message} = req.body;
 
