@@ -28,7 +28,7 @@ function Login () {
   const submitHandler = async event => {
     event.preventDefault()
 
-    const response = await fetch('/api/login', {
+    const response = await fetch('https://portfolio-mjax.onrender.com/login', {
       // fetching data from backend
       method: 'POST',
       headers: {
