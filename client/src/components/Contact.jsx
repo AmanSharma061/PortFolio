@@ -21,7 +21,7 @@ function Contact() {
         position: toast.POSITION.TOP_CENTER,
       });
       return;
-    } else if (typeof querry.email != "email") {
+    } else if (typeof querry.email != "string") {
       toast.warn("Please enter a valid email", {
         position: toast.POSITION.TOP_CENTER,
         autoClose: 2000,

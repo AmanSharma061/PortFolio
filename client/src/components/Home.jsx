@@ -53,7 +53,8 @@ function Home () {
           </span>
         </button>
       </div>
-      <div id='about' className='mt-28'>
+      <div id='about' className='mt-28
+      '>
         <About />
       </div>
       <div id='contact' className='mt-16 mb-10'>
