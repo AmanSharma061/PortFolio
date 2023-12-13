@@ -76,7 +76,7 @@ function Register () {
 
     try {
       const { name, email, phone, profession, password, cpassword } = user
-      const response = await fetch('https://portfolio-mjax.onrender.com/register', {
+      const response = await fetch('/api/register', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
