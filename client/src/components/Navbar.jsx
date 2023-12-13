@@ -3,54 +3,6 @@ import { Link, NavLink } from 'react-router-dom'
 import userContext from '../context/userContext'
 
 export default function Navbar () {
-  const Rout = () => {
-    if (localStorage.getItem('storageToken') != null) {
-      return (
-        <>
-          <li className='cursor-pointer  '>
-            <NavLink
-              to='/projects'
-              className={({ isActive }) => (isActive ? activeLink : '')}
-            >
-              Projects
-            </NavLink>
-          </li>
-
-          <li className='cursor-pointer'>
-            <NavLink
-              to='/logout'
-              className={({ isActive }) => (isActive ? activeLink : '')}
-            >
-              Log out
-            </NavLink>
-          </li>
-        </>
-      )
-    } else {
-      return (
-        <>
-          <li className='cursor-pointer  '>
-            <NavLink
-              to='/login'
-              className={({ isActive }) => (isActive ? activeLink : '')}
-            >
-              Login{' '}
-            </NavLink>
-          </li>
-
-          <li className='cursor-pointer'>
-            <NavLink
-              to='/register'
-              className={({ isActive }) => (isActive ? activeLink : '')}
-            >
-              Signup
-            </NavLink>
-          </li>
-        </>
-      )
-    }
-  }
-
   const { log, setLog } = useContext(userContext)
   useEffect(() => {}, [])
   const isUserLoggedIn = !!localStorage.getItem('storageToken')
@@ -106,7 +58,14 @@ export default function Navbar () {
                 Contact
               </NavLink>
             </li>
-            <Rout />
+            <li className='cursor-pointer  '>
+              <NavLink
+                to='/projects'
+                className={({ isActive }) => (isActive ? activeLink : '')}
+              >
+                Projects
+              </NavLink>
+            </li>
           </ul>
         </div>
 
