@@ -170,7 +170,7 @@ function Projects () {
                 <div className='mx-auto max-w-xs px-4'>
                   <p className='pt-16 flex items-baseline justify-center gap-x-2'>
                     {/* Video */}
-                    <img src='/trip.png' alt='' className='   text-white ' />
+                    <img src='/trip.png' alt='' className='   text-white  ' />
                   </p>
                   <p className='mt-6 text-xs leading-5 text-gray-600'>
                     All the code is in the Github Repository and the link is

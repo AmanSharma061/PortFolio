@@ -47,14 +47,17 @@ function Home () {
             <path d='M13 8V2H7v6H2l8 8 8-8h-5zM0 18h20v2H0v-2z' />
           </svg>
           <span>
-            <a href='./public/resume.jpg' download>
+            <a href='./Aman_Resume.pdf' download>
               Resume
             </a>
           </span>
         </button>
       </div>
-      <div id='about' className='mt-28
-      '>
+      <div
+        id='about'
+        className='mt-28
+      '
+      >
         <About />
       </div>
       <div id='contact' className='mt-16 mb-10'>
