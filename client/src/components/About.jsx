@@ -8,7 +8,7 @@ function About () {
   return (
     <>
       <div>
-        <section className='flex items-center bg-white xl:h-screen font-poppins dark:bg-white -mt-6 '>
+        <section className='flex items-center bg-white xl:h-screen font-poppins dark:bg-white -mt-12 '>
           <div className='justify-center flex-1 max-w-6xl py-4 mx-auto lg:py-6 md:px-6'>
             <div className='px-4 mb-10 md:text-center md:mb-20'>
               <p className='mb-2 text-lg font-semibold text-red-400 dark:text-gray-900'>
