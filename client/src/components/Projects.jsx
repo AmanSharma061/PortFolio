@@ -183,6 +183,13 @@ function Projects () {
                   >
                     View Project
                   </a>
+                  <a
+                    href='https://tripbliss.vercel.app/'
+                    target='_blank'
+                    className='underline'
+                  >
+                    Deployed link
+                  </a>
                 </div>
               </div>
             </div>
