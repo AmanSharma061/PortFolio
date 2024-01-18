@@ -1,7 +1,11 @@
 import React, { useEffect } from 'react'
 import { CheckIcon } from '@heroicons/react/20/solid'
 import { useState } from 'react'
-
+import { Link } from 'react-router-dom'
+import { ImGithub } from "react-icons/im";
+import { FaInstagram } from "react-icons/fa6";
+import { FaXTwitter } from "react-icons/fa6";
+import { FaLinkedin } from "react-icons/fa";
 const ClipFeatures = [
   'Html & CSS',
   'Javascript XML',
@@ -47,32 +51,14 @@ function Projects () {
       <div>
         <div className='bg-white py-3   sm:py-32 mt-6 '>
           <div className='mx-auto max-w-7xl px-6 lg:px-8'>
-            <dl className='grid grid-cols-3 gap-x-2 gap-y-16 text-center lg:grid-cols-3'>
-              <div className='mx-auto flex max-w-xs flex-col gap-y-4'>
-                <dt className='text-xs leading-4 text-gray-600 sm:text-base'>
-                  {stats[0].name}
-                </dt>
-                <dd className='order-first text-3xl font-semibold tracking-tight text-gray-900 sm:text-5xl'>
-                  {stats[0].value}
-                </dd>
-              </div>
-              <div className='mx-auto flex max-w-xs flex-col gap-y-4'>
-                <dt className='text-xs leading-4 text-gray-600 sm:text-base'>
-                  {stats[1].name}
-                </dt>
-                <dd className='order-first text-3xl font-semibold tracking-tight text-gray-900 sm:text-5xl'>
-                  {stats[1].value}
-                </dd>
-              </div>
-              <div className='mx-auto flex max-w-xs flex-col gap-y-4'>
-                <dt className='text-xs leading-4 text-gray-600 sm:text-base'>
-                  {'Github Repositories'}
-                </dt>
-                <dd className='order-first text-3xl font-semibold tracking-tight text-gray-900 sm:text-5xl'>
-                  {'0' + count}
-                </dd>
-              </div>
-            </dl>
+            {/* creating tihub and linked in links using react icons */}
+            <div className='w-full flex  justify-between gap-x-4 px-[10%]'>
+              <Link className='flex  items-center gap-x-2' to={'https://github.com/AmanSharma061'} target='_blank'> <span><ImGithub /></span> Github</Link>
+              <Link className='flex  items-center gap-x-2' to={'https://linkedin.com/in/amansharma061'} target='_blank'> <span><FaLinkedin  /></span> Linkedin</Link>
+              <Link className='flex  items-center gap-x-2' to={'https://instagram.com/aman.sharma061'} target='_blank'> <span><FaInstagram  /></span> Instagram</Link>
+              <Link className='flex  items-center gap-x-2' to={'https://twitter.com/AmanSharma061'} target='_blank'> <span><FaXTwitter /></span> Twitter</Link>
+            
+            </div>
           </div>
         </div>
         {/*  */}
@@ -126,6 +112,13 @@ function Projects () {
                   >
                     View Project
                   </a>
+                  <a
+                    href='https://clipkart.onrender.com/'
+                    target='_blank'
+                    className='underline'
+                  >
+                    Deployed link
+                    </a>
                 </div>
               </div>
             </div>
