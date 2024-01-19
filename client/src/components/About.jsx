@@ -26,7 +26,7 @@ function About () {
             <div className='flex flex-wrap '>
               <div className='w-full px-4 mb-10 lg:w-1/2 lg:mb-0'>
                 <img
-                  src='https://i.postimg.cc/j5L5bX2d/pexels-andrea-piacquadio-3757946.jpg'
+                  src="/programmer.png"
                   alt=''
                   className='relative z-10 object-cover w-full h-96'
                 />

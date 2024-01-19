@@ -5,7 +5,9 @@ import { ToastContainer, toast } from 'react-toastify'
 import { ThreeDots } from 'react-loader-spinner'
 import About from './About'
 import Contact from './Contact'
+// import ProjectCard from './ProjectCard'
 function Home () {
+
   useEffect(() => {
     window.scrollTo(0, 0)
   })
@@ -14,6 +16,8 @@ function Home () {
     <>
       <ToastContainer />
 
+    <div className='grid lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 grid-cols-1 '>
+    <div>
       <div id='typing' className='font-bold  text-3xl m-48 text-red-500'>
         <h2 className='text-4xl font-light'>Hi ! I'm Aman</h2>
         <span className='text-base ml-2 text-[#24527a]'>
@@ -53,16 +57,22 @@ function Home () {
           </span>
         </button>
       </div>
+      </div>
+   <div className=''>
+    <img src="/programmer.png" alt="programmer" className='p-14 1'  />
+   </div>
+    </div>
+
       <div
         id='about'
-        className='mt-28
-      '
+        className='mt-28'
       >
         <About />
       </div>
       <div id='contact' className='mt-16 mb-10'>
         <Contact />
       </div>
+     {/* <ProjectCard  /> */}
     </>
   )
 }
