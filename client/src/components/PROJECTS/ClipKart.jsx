@@ -13,7 +13,7 @@ const ClipKart = () => {
   ]
   return (
     <div className='mx-auto max-w-7xl px-6 lg:px-8  my-2 box-border '>
-      <div className=' mt-8 max-w-2xl rounded-3xl ring-1 ring-gray-200  lg:mx-0 lg:flex lg:max-w-none  border border-opacity-60 bg-[#e5e5e5] box-border'>
+      <div className=' mt-16 max-w-2xl rounded-3xl ring-1 ring-gray-200  lg:mx-0 lg:flex lg:max-w-none  border border-opacity-60 bg-[#e5e5e5] box-border'>
         <div className=' max-w-full px-4 rounded-3xl box-border py-4 bg-[#e5e5e5] '>
           <img src='/clipkart.png' alt='' className='  lg:h-full' />
         </div>
