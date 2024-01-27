@@ -68,13 +68,6 @@ function Home () {
       </div>
 
 
-        <div className=''>
-          <img
-            src='/programmer.png'
-            alt='programmer'
-            className='p-14 sm:hidden md:hidden hidden lg:block'
-          />
-        </div>
 
         <section id='about' className='mt-28'>
           <About />
