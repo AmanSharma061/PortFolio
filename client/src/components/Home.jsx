@@ -66,26 +66,7 @@ function Home () {
           />
         </div>
       </div>
-      <section id='about' className='mt-28 section'>
-        <div className=' relative bottom-36 left-48 w-fit   ' id='resume'>
-          <button
-            id='rbutton'
-            className='bg-[#df2a61] hover:bg-[#be3144] text-gray-100 font-bold py-2 px-3 rounded flex  items-center'
-          >
-            <svg
-              className='fill-current w-4 h-4 mr-2'
-              xmlns='http://www.w3.org/2000/svg'
-              viewBox='0 0 20 20'
-            >
-              <path d='M13 8V2H7v6H2l8 8 8-8h-5zM0 18h20v2H0v-2z' />
-            </svg>
-            <span>
-              <a href='./Aman_Resume.pdf' download>
-                Resume
-              </a>
-            </span>
-          </button>
-        </div>
+
 
         <div className=''>
           <img
@@ -104,7 +85,6 @@ function Home () {
         <section id='skills' className='py-16  '>
           <Contact />
         </section>
-      </section>
     </>
   )
 }
