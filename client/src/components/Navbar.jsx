@@ -1,7 +1,7 @@
 import React, { useContext, useEffect, useState } from 'react'
 import { Link, NavLink } from 'react-router-dom'
 import userContext from '../context/userContext'
-import { FaAlignRight } from "react-icons/fa6";
+
 export default function Navbar () {
   const { log, setLog } = useContext(userContext)
   useEffect(() => {}, [])
@@ -21,6 +21,7 @@ export default function Navbar () {
     }
   }
   const activeLink = 'text-[#df2a61] font-bold'
+
   return (
     <>
       <nav className='flex   items-center text-center flex-wrap bg-white   p-6  sticky z-20    top-0  '>
@@ -35,37 +36,51 @@ export default function Navbar () {
         <div className='xx ml-auto mr-40 ' id='btn'>
           <ul className=' md:gap-8 sm:gap-8 gap-4   flex mt-2 font-mono font-normal tracking-wide  '>
             <li className='cursor-pointer  '>
-              <NavLink
-                to='/'
-                className={({ isActive }) => (isActive ? activeLink : '')}
+              <button
+                onClick={() => {
+                  window.scrollTo(0, 0)
+                }}
               >
                 Home
-              </NavLink>
+              </button>
             </li>
-            <li className='cursor-pointer   '>
-              <NavLink
-                to='/about'
-                className={({ isActive }) => (isActive ? activeLink : '')}
+            <li className='cursor-pointer'>
+              <button
+                onClick={() => {
+                  window.scrollTo(0, 900)
+                }}
               >
                 About
-              </NavLink>
+              </button> 
             </li>
-            <li className='cursor-pointer  '>
-              <NavLink
-                to='/contact'
-                className={({ isActive }) => (isActive ? activeLink : '')}
+            <li className='cursor-pointer'>
+              <button
+                onClick={() => {
+                  window.scrollTo(0, 1800)
+                }}
               >
-                Contact
-              </NavLink>
+                Skills
+              </button>
             </li>
-            <li className='cursor-pointer  '>
-              <NavLink
-                to='/projects'
-                className={({ isActive }) => (isActive ? activeLink : '')}
+            <li className='cursor-pointer'>
+              <button
+                onClick={() => {
+                  window.scrollTo(0, 3000)
+                }}
               >
                 Projects
-              </NavLink>
+              </button>
             </li>
+            <li className='cursor-pointer'>
+              <button
+                onClick={() => {
+                  window.scrollTo(0, 4000)
+                }}
+              >
+                Contact
+              </button>
+            </li>
+
           </ul>
         </div>
 
@@ -76,7 +91,6 @@ export default function Navbar () {
           onClick={hamburger}
           id='h'
         />
-     
       </nav>
     </>
   )

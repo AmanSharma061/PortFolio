@@ -1,6 +1,7 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
 import { useEffect } from 'react'
+import Skills from './Skills'
 
 function About () {
 
@@ -89,16 +90,12 @@ function About () {
                     Frameworks like Bootstrap, Tailwind CSS, and Material UI.
                   </li>
                 </ul>
-                <NavLink
-                  to='/projects'
-                  className='px-4 py-3 text-red-700 transition-all transform border border-red-500 hover:bg-red-600 dark:border-red-400 dark:hover:bg-red-500 dark:hover:text-gray-100 dark:hover:border-red-500 dark:text-red-400 hover:text-gray-100'
-                >
-                  Discover more
-                </NavLink>
+            
               </div>
             </div>
           </div>
         </section>
+        
       </div>
     </>
   )

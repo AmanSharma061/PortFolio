@@ -5,7 +5,12 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily:{
+        "Gruppo": "Gruppo",
+        "Roboto": "Roboto",
+      }
+    },
   },
   plugins: [],
 }

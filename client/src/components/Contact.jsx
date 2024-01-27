@@ -53,7 +53,6 @@ function Contact () {
               from_phone: '',
               message: ''
             })
-            
           },
           error => {
             console.log(error.text)
@@ -66,12 +65,16 @@ function Contact () {
   }
   return (
     <>
-      <div className=' sm:w-[65%] mx-auto flex  items-center text-center sm:mt-[2%] '>
-        <div className=' w-[100%] mt-[5vh]  flex justify-center shadow-xl cc'>
+     <div className=''>
+     <h1 className='flex justify-center w-full text-5xl text-[#352f56]/90 font-bold font-sans '>
+        Let's Build Your Dream
+      </h1>
+      <div className=' sm:w-[100%] md:w-[70%] mx-auto flex   text-center sm:mt-[2%] border rounded-3xl   '>
+        <div className=' w-[100%]  border  flex justify-center rounded-3xl   cc'>
           <img
             src='/contact.png'
             alt=''
-            className='w-[50%] h-[60vh] my-auto '
+            className='w-[50%] md:hidden lg:flex lg:h-[70%] h-[60vh] my-auto  '
             id='contact'
           />
 
@@ -81,7 +84,7 @@ function Contact () {
             className='w-[100%] h-full gap-4  flex flex-col  my-16'
             id='fm'
           >
-            <h1 className='  font-bold text-3xl relative top-[-6vh] text-red-400 '>
+            <h1 className=' sm:hidden  font-bold text-3xl relative top-[-6vh] text-red-400 '>
               {' '}
               Get in Touch
             </h1>
@@ -165,6 +168,7 @@ function Contact () {
           </form>
         </div>
       </div>
+     </div>
     </>
   )
 }
