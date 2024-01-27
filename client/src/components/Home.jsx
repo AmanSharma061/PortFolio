@@ -59,7 +59,7 @@ function Home () {
       </div>
       </div>
    <div className=''>
-    <img src="/programmer.png" alt="programmer" className='p-14 1'  />
+    <img src="/programmer.png" alt="programmer" className='p-14 sm:hidden md:hidden hidden lg:block'  />
    </div>
     </div>
 
